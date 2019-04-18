@@ -1,6 +1,7 @@
 language: python
 
 matrix:
+  fast_finish: true 
   include:
 
     # Here you can add or remove specific builds, and Python versions. You
@@ -11,8 +12,13 @@ matrix:
       language: python
       env: TEST_SUITE=flake8
     - stage: 'unit tests'
-      python: 2.7.15
+      python: '2.7.15'
       env: TEST_SUITE=unit
+      language: python
+    - python: '3.7'
+      language: python
+      env: TEST_SUITE=unit
+
 
 stages:
   - 'style checks'
