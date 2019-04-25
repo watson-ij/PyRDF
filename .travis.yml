@@ -38,9 +38,6 @@ before_install:
   - conda info -a
   - export SPARK_LOCAL_IP="127.0.0.1"
    
-  # pyspark / spark require java 8
-  - bash travis_java_install.sh 
-
 install:
 
   # We just set up a conda environment with the right Python version. This
