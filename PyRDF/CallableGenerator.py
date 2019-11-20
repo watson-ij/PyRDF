@@ -103,7 +103,8 @@ class CallableGenerator(object):
                                                              start, end)
                     # Create a partial snapshot on the current range
                     pyroot_node = RDFOperation(operation.args[0],
-                                               path_with_range)
+                                               path_with_range,
+                                               *operation.args[2:])
                 else:
                     pyroot_node = RDFOperation(*operation.args,
                                                **operation.kwargs)
