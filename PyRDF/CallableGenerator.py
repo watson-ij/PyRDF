@@ -102,7 +102,7 @@ class CallableGenerator(object):
                     path_with_range = "{}_{}_{}.root".format(filename,
                                                              start, end)
                     # Create a partial snapshot on the current range
-                    operations.args[1] = path_with_range
+                    operation.args[1] = path_with_range
                 pyroot_node = RDFOperation(*operation.args,
                                            **operation.kwargs)
 
