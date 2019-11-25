@@ -282,7 +282,7 @@ class DunderMethodsTest(unittest.TestCase):
         node_dict = {"children": [n1.proxied_node]}
         n1_dict = {
             'operation_name': "Define",
-            'operation_args': ("a",),
+            'operation_args': ["a",],
             'operation_kwargs': {"b": "c"},
             'children': []
         }
@@ -304,7 +304,7 @@ class DunderMethodsTest(unittest.TestCase):
         node_dict = {"children": [n1]}
         n1_dict = {
             'operation_name': "Define",
-            'operation_args': ("a",),
+            'operation_args': ["a",],
             'operation_kwargs': {"b": "c"},
             'children': []
         }
